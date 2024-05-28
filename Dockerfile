@@ -1,5 +1,5 @@
 FROM node:lts-alpine3.20
 WORKDIR /app
 COPY . . 
-RUN npm install
+RUN node index.js
 CMD ["npm", "node"]
